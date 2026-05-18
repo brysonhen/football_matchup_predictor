@@ -1,0 +1,87 @@
+{
+  "feature_columns": [
+    "home_ppg_l5",
+    "away_ppg_l5",
+    "home_ppg_l10",
+    "away_ppg_l10",
+    "home_gf_l5",
+    "home_ga_l5",
+    "away_gf_l5",
+    "away_ga_l5",
+    "home_rest_days",
+    "away_rest_days",
+    "ppg_diff_l5",
+    "gf_diff_l5"
+  ],
+  "labels": [
+    "H",
+    "D",
+    "A"
+  ],
+  "train_seasons": [
+    "1920",
+    "2021",
+    "2122",
+    "2223"
+  ],
+  "test_seasons": [
+    "2324"
+  ],
+  "last_match_date": "2024-05-19",
+  "metrics": {
+    "dummy_log_loss": 1.0537,
+    "form_log_loss": 1.0411,
+    "model_log_loss": 0.98,
+    "model_accuracy": 0.5378
+  },
+  "confusion_matrix": [
+    [
+      132,
+      0,
+      39
+    ],
+    [
+      49,
+      0,
+      31
+    ],
+    [
+      52,
+      0,
+      67
+    ]
+  ],
+  "classification_report": {
+    "H": {
+      "precision": 0.5665236051502146,
+      "recall": 0.7719298245614035,
+      "f1-score": 0.6534653465346535,
+      "support": 171.0
+    },
+    "D": {
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1-score": 0.0,
+      "support": 80.0
+    },
+    "A": {
+      "precision": 0.48905109489051096,
+      "recall": 0.5630252100840336,
+      "f1-score": 0.5234375,
+      "support": 119.0
+    },
+    "accuracy": 0.5378378378378378,
+    "macro avg": {
+      "precision": 0.3518582333469085,
+      "recall": 0.444985011548479,
+      "f1-score": 0.39230094884488453,
+      "support": 370.0
+    },
+    "weighted avg": {
+      "precision": 0.4191151804666419,
+      "recall": 0.5378378378378378,
+      "f1-score": 0.47035577502006964,
+      "support": 370.0
+    }
+  }
+}
