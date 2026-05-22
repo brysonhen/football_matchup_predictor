@@ -10,6 +10,7 @@ sys.path.insert(0, str(ROOT))
 
 from src.load_data import load_matches  # noqa: E402
 from src.predict import load_artifacts, predict_matchup  # noqa: E402
+from src.refresh_data import refresh as refresh_data  # noqa: E402
 
 st.set_page_config(
     page_title="PL Matchup Predictor",
@@ -193,6 +194,21 @@ def get_h2h(home: str, away: str) -> pd.DataFrame:
     )
     return matches[mask].sort_values("Date", ascending=False).head(8).reset_index(drop=True)
 
+
+# ── Sidebar: data refresh ─────────────────────────────────────────────────────
+with st.sidebar:
+    st.markdown("### Data")
+    st.caption(
+        "Match data comes from [football-data.co.uk](https://www.football-data.co.uk). "
+        "Click below to pull the latest results for the current season."
+    )
+    if st.button("Refresh match data", use_container_width=True):
+        with st.spinner("Checking for new matches..."):
+            updated = refresh_data()
+        if updated:
+            st.success(f"Downloaded latest data. Retrain the model to apply it.")
+        else:
+            st.info("Already up to date.")
 
 # ── Load artifacts ────────────────────────────────────────────────────────────
 try:

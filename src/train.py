@@ -20,7 +20,7 @@ from src.load_data import load_matches
 
 ROOT = Path(__file__).resolve().parents[1]
 MODELS_DIR = ROOT / "models"
-TEST_SEASONS = {"2425"}
+TEST_SEASONS = {"2526"}
 LABELS = ["H", "D", "A"]
 
 

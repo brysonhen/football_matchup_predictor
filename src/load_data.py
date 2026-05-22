@@ -12,8 +12,8 @@ def load_matches(raw_dir: Path | None = None) -> pd.DataFrame:
 
     for path in sorted(raw_dir.glob("E0_*.csv")):
         season = path.stem.replace("E0_", "")
-        df = pd.read_csv(path, encoding="latin-1")
-        frames.append(df.assign(Season=season))
+        df = pd.read_csv(path, encoding="latin-1", usecols=lambda c: True)
+        frames.append(df[CORE_COLUMNS].assign(Season=season))
 
     if not frames:
         raise FileNotFoundError(f"No E0_*.csv files found in {raw_dir}")
