@@ -234,7 +234,7 @@ with col1:
     )
 with mid:
     st.markdown("<div style='padding-top:1.7rem;text-align:center;'>", unsafe_allow_html=True)
-    if st.button("swap", use_container_width=True, help="Swap home and away teams"):
+    if st.button("⇄", use_container_width=True, help="Swap home and away teams"):
         st.session_state.home, st.session_state.away = st.session_state.away, st.session_state.home
         st.rerun()
     st.markdown("</div>", unsafe_allow_html=True)
