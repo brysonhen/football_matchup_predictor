@@ -20,7 +20,6 @@ from src.load_data import load_matches
 
 ROOT = Path(__file__).resolve().parents[1]
 MODELS_DIR = ROOT / "models"
-TEST_SEASONS = {"2526"}
 LABELS = ["H", "D", "A"]
 
 
@@ -46,8 +45,11 @@ def train_and_evaluate() -> dict:
     matches = load_matches()
     features = build_feature_matrix(matches)
 
-    train_mask = ~features["Season"].isin(TEST_SEASONS)
-    test_mask = features["Season"].isin(TEST_SEASONS)
+    # Always hold out the most recent season as the test set, so the split
+    # rolls forward automatically when a new PL season starts.
+    test_seasons = {str(features["Season"].max())}
+    train_mask = ~features["Season"].isin(test_seasons)
+    test_mask = features["Season"].isin(test_seasons)
 
     X_train = features.loc[train_mask, FEATURE_COLUMNS]
     y_train = _encode(features.loc[train_mask, "FTR"])
@@ -87,7 +89,7 @@ def train_and_evaluate() -> dict:
         "feature_columns": FEATURE_COLUMNS,
         "labels": LABELS,
         "train_seasons": sorted(features.loc[train_mask, "Season"].unique().tolist()),
-        "test_seasons": sorted(TEST_SEASONS),
+        "test_seasons": sorted(test_seasons),
         "last_match_date": last_date.strftime("%Y-%m-%d"),
         "metrics": {
             "dummy_log_loss": round(dummy_log_loss, 4),

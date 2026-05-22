@@ -1,0 +1,63 @@
+name: Refresh predictions
+
+# Runs twice a week to pull the latest Premier League results, retrain the
+# model, and push the updated data to the website repo (which Vercel then
+# auto-deploys). Can also be triggered manually from the Actions tab.
+on:
+  schedule:
+    - cron: "0 7 * * 1,5" # Monday & Friday, 07:00 UTC
+  workflow_dispatch: {}
+
+concurrency:
+  group: refresh
+  cancel-in-progress: false
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - name: Check out model repo
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Refresh match data
+        run: python src/refresh_data.py
+
+      - name: Retrain model
+        run: python -m src.train
+
+      - name: Commit data + model to this repo
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add data/raw models
+          git diff --cached --quiet || git commit -m "weekly data refresh"
+          git push
+
+      - name: Check out website repo
+        uses: actions/checkout@v4
+        with:
+          repository: brysonhen/soccer_predictor_web
+          token: ${{ secrets.WEB_REPO_TOKEN }}
+          path: web
+
+      - name: Export model into website
+        run: python -m src.export_web web
+
+      - name: Commit + push website
+        run: |
+          cd web
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add data api/_data
+          git diff --cached --quiet || git commit -m "refresh model data"
+          git push
