@@ -62,6 +62,11 @@ class TeamHistory:
                 out["ga_l5"] = sum(w_ga) / window
 
         out["rest_days"] = (as_of - dates[-1]).days
+
+        # Last 5 results as W/D/L strings (most recent last)
+        recent_pts = pts[-5:]
+        out["recent_form"] = ["W" if p == 3 else ("D" if p == 1 else "L") for p in recent_pts]
+
         return out
 
     def add_match(
