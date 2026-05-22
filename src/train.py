@@ -67,7 +67,7 @@ def train_and_evaluate() -> dict:
             ("scaler", StandardScaler()),
             (
                 "model",
-                LogisticRegression(max_iter=2000, random_state=42),
+                LogisticRegression(max_iter=2000, random_state=42, class_weight="balanced"),
             ),
         ]
     )

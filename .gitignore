@@ -4,5 +4,6 @@ __pycache__/
 .DS_Store
 .ipynb_checkpoints/
 data/processed/
+data/processed_features.csv
 *.egg-info/
 .pytest_cache/

@@ -3,6 +3,7 @@ from pathlib import Path
 
 import joblib
 import numpy as np
+import pandas as pd
 
 from src.features import FEATURE_COLUMNS, matchup_features
 
@@ -28,13 +29,14 @@ def predict_matchup(home: str, away: str) -> dict:
         missing = [t for t in (home, away) if t not in snapshots]
         raise ValueError(f"Not enough history for: {', '.join(missing)}")
 
-    probs = pipeline.predict_proba(features.reshape(1, -1))[0]
+    features_df = pd.DataFrame([features], columns=FEATURE_COLUMNS)
+    probs = pipeline.predict_proba(features_df)[0]
     pred_idx = int(np.argmax(probs))
     pred_label = metadata["labels"][pred_idx]
 
     scaler = pipeline.named_steps["scaler"]
     model = pipeline.named_steps["model"]
-    scaled = scaler.transform(features.reshape(1, -1))[0]
+    scaled = scaler.transform(features_df)[0]
     coefs = model.coef_[pred_idx]
     contributions = list(zip(FEATURE_COLUMNS, (coefs * scaled).tolist()))
     contributions.sort(key=lambda x: abs(x[1]), reverse=True)
