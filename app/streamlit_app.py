@@ -71,7 +71,7 @@ def verdict_text(home: str, away: str, home_p: float, draw_p: float, away_p: flo
         strength = "strong favorites" if margin > 0.20 else "slight favorites"
         return f"{away} are {strength} despite playing away."
     else:
-        return "This matchup is too close to call — a draw is very much on the cards."
+        return "This matchup is too close to call. A draw is very much on the cards."
 
 
 def contextual_explanation(feature: str, impact: float, home: str, away: str, snapshots: dict) -> str | None:
@@ -89,51 +89,51 @@ def contextual_explanation(feature: str, impact: float, home: str, away: str, sn
 
     lines = {
         "home_ppg_l5": (
-            f"{home}'s recent form: {val(h,'ppg_l5')} pts/game over their last 5 — "
+            f"{home}'s recent form: {val(h,'ppg_l5')} pts/game over their last 5:"
             + ("this strengthens the home win case." if supports else "this weakens the home win case.")
         ),
         "away_ppg_l5": (
-            f"{away}'s recent away form: {val(a,'ppg_l5')} pts/game over their last 5 — "
+            f"{away}'s recent away form: {val(a,'ppg_l5')} pts/game over their last 5:"
             + ("their dip in form favors the home side." if supports else "their strong recent form makes an away win more likely.")
         ),
         "home_ppg_l10": (
-            f"{home}'s longer-term form: {val(h,'ppg_l10')} pts/game over 10 games — "
+            f"{home}'s longer-term form: {val(h,'ppg_l10')} pts/game over 10 games:"
             + ("consistent home strength." if supports else "inconsistency hurts their home win chances.")
         ),
         "away_ppg_l10": (
-            f"{away}'s longer-term away record: {val(a,'ppg_l10')} pts/game over 10 games — "
+            f"{away}'s longer-term away record: {val(a,'ppg_l10')} pts/game over 10 games:"
             + ("their away struggles help the home side." if supports else "their strong away record closes the gap.")
         ),
         "home_gf_l5": (
-            f"{home} have scored {val(h,'gf_l5')} goals/game recently — "
+            f"{home} have scored {val(h,'gf_l5')} goals/game recently:"
             + ("that firepower supports a home win." if supports else "a lack of goals makes a win harder.")
         ),
         "home_ga_l5": (
-            f"{home} have conceded {val(h,'ga_l5')} goals/game recently — "
+            f"{home} have conceded {val(h,'ga_l5')} goals/game recently:"
             + ("a tight defense helps." if supports else "a leaky defense increases the risk of dropping points.")
         ),
         "away_gf_l5": (
-            f"{away} have scored {val(a,'gf_l5')} goals/game on the road — "
+            f"{away} have scored {val(a,'gf_l5')} goals/game on the road:"
             + ("their limited attack reduces away win odds." if supports else "their threat in front of goal increases away win chances.")
         ),
         "away_ga_l5": (
-            f"{away} have conceded {val(a,'ga_l5')} goals/game on the road — "
+            f"{away} have conceded {val(a,'ga_l5')} goals/game on the road:"
             + ("defensive fragility away from home helps {home}." if supports else f"a solid away defense makes life harder for {home}.")
         ),
         "home_rest_days": (
-            f"{home} have had {int(h.get('rest_days', 0))} days rest — "
+            f"{home} have had {int(h.get('rest_days', 0))} days rest:"
             + ("fresh legs help at home." if supports else "fatigue could be a factor.")
         ),
         "away_rest_days": (
-            f"{away} have had {int(a.get('rest_days', 0))} days rest before travelling — "
+            f"{away} have had {int(a.get('rest_days', 0))} days rest before travelling:"
             + ("travel fatigue may hurt them." if supports else "they arrive fresh, which favors an away result.")
         ),
         "ppg_diff_l5": (
-            f"Recent form gap (last 5): {home} have {val(h,'ppg_l5')} pts/game vs {away}'s {val(a,'ppg_l5')} — "
+            f"Recent form gap (last 5): {home} have {val(h,'ppg_l5')} pts/game vs {away}'s {val(a,'ppg_l5')}:"
             + ("the form advantage is with the home side." if supports else "the gap actually favors the visitors.")
         ),
         "gf_diff_l5": (
-            f"Attacking output gap: {home} score {val(h,'gf_l5')} vs {away}'s {val(a,'gf_l5')} goals/game — "
+            f"Attacking output gap: {home} score {val(h,'gf_l5')} vs {away}'s {val(a,'gf_l5')} goals/game:"
             + ("home side has the sharper attack." if supports else "the away side's attack is more dangerous right now.")
         ),
     }
@@ -153,7 +153,7 @@ teams = sorted(snapshots.keys())
 st.title("Premier League Matchup Predictor")
 st.markdown(
     "Pick any two Premier League teams and get a **pre-match win probability** "
-    "based on each team's recent form — points per game, goals, and rest time. "
+    "based on each team's recent form:points per game, goals, and rest time. "
     "No score or result from the match itself is used."
 )
 st.divider()
@@ -170,7 +170,7 @@ with col2:
     default_away = away_options.index("Chelsea") if "Chelsea" in away_options else 0
     away = st.selectbox("Away team", away_options, index=default_away, label_visibility="collapsed")
 
-st.caption(f"Form stats through **{metadata['last_match_date']}** — the final match in the dataset.")
+st.caption(f"Form stats through **{metadata['last_match_date']}**:the final match in the dataset.")
 st.button("Predict", type="primary", use_container_width=True, key="predict_btn")
 
 if st.session_state.get("predict_btn"):
@@ -197,7 +197,7 @@ if st.session_state.get("predict_btn"):
     st.caption("Current form heading into this fixture")
 
     def fmt(v, d=1):
-        return f"{v:.{d}f}" if v is not None else "—"
+        return f"{v:.{d}f}" if v is not None else "N/A"
 
     c1, c2 = st.columns(2)
     with c1:
@@ -230,7 +230,7 @@ if st.session_state.get("predict_btn"):
     # ── Probability display ───────────────────────────────────────────────────
     st.markdown("#### Predicted outcome probabilities")
     st.caption(
-        "A **win probability** is not a guarantee — it reflects how often a team with "
+        "A **win probability** is not a guarantee:it reflects how often a team with "
         "this form profile wins in similar matchups. 45% home win means: across many games "
         "with these stats, the home side wins about 45% of the time."
     )
@@ -303,15 +303,15 @@ if st.session_state.get("predict_btn"):
         m = metadata["metrics"]
 
         st.markdown(
-            f"This is a **multinomial logistic regression** — a statistical model that "
+            f"This is a **multinomial logistic regression**:a statistical model that "
             f"learns which combinations of form stats predict match outcomes. "
             f"It was trained on **{', '.join(train_seasons)}** Premier League seasons "
-            f"and then tested on **{test_seasons[0]}** — a full season it had never seen."
+            f"and then tested on **{test_seasons[0]}**:a full season it had never seen."
         )
         st.markdown(
             "**Log loss** measures how well the model's probabilities match reality. "
             "Lower is better. A model that just always guesses the most common outcome "
-            "scores around 1.05 — this model scores 1.026, meaning its probabilities "
+            "scores around 1.05:this model scores 1.026, meaning its probabilities "
             "are better calibrated than that baseline."
         )
 
@@ -330,7 +330,7 @@ if st.session_state.get("predict_btn"):
         st.dataframe(perf_df, hide_index=True, use_container_width=True)
         st.caption(
             f"Accuracy on {test_seasons[0]}: **{m['model_accuracy']:.1%}** across 370 matches. "
-            "Soccer is hard to predict — even professional betting markets are wrong ~45% of the time on hard games. "
+            "Soccer is hard to predict:even professional betting markets are wrong ~45% of the time on hard games. "
             "Draws in particular are notoriously difficult; the model uses balanced class weighting "
             "to avoid always ignoring them."
         )
