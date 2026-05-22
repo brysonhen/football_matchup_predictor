@@ -60,7 +60,7 @@ LABEL_MAP = {0: "H", 1: "D", 2: "A"}
 
 def main(web_root: Path) -> None:
     api_data = web_root / "api" / "_data"
-    public_data = web_root / "public" / "data"
+    public_data = web_root / "data"
     api_data.mkdir(parents=True, exist_ok=True)
     public_data.mkdir(parents=True, exist_ok=True)
 
@@ -143,6 +143,7 @@ def main(web_root: Path) -> None:
         "metrics": metadata["metrics"],
         "confusionMatrix": metadata["confusion_matrix"],
         "monthlyAccuracy": monthly_json,
+        "recentResults": list(reversed(matches_json[-8:])),
         "totalMatches": len(matches_json),
         "teamCount": len(snapshots),
     }
@@ -152,8 +153,8 @@ def main(web_root: Path) -> None:
     print(f"  api/_data/model.json      ({len(FEATURE_COLUMNS)} features)")
     print(f"  api/_data/snapshots.json  ({len(snapshots)} teams)")
     print(f"  api/_data/matches.json    ({len(matches_json)} matches)")
-    print(f"  public/data/teams.json    ({len(teams_json)} teams)")
-    print(f"  public/data/meta.json     ({len(monthly_json)} months of accuracy)")
+    print(f"  data/teams.json           ({len(teams_json)} teams)")
+    print(f"  data/meta.json            ({len(monthly_json)} months of accuracy)")
 
 
 if __name__ == "__main__":
