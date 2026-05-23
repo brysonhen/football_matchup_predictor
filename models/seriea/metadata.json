@@ -1,0 +1,91 @@
+{
+  "league": "seriea",
+  "league_name": "Serie A",
+  "feature_columns": [
+    "home_ppg_l5",
+    "away_ppg_l5",
+    "home_ppg_l10",
+    "away_ppg_l10",
+    "home_gf_l5",
+    "home_ga_l5",
+    "away_gf_l5",
+    "away_ga_l5",
+    "home_rest_days",
+    "away_rest_days",
+    "ppg_diff_l5",
+    "gf_diff_l5"
+  ],
+  "labels": [
+    "H",
+    "D",
+    "A"
+  ],
+  "train_seasons": [
+    "1920",
+    "2021",
+    "2122",
+    "2223",
+    "2324",
+    "2425"
+  ],
+  "test_seasons": [
+    "2526"
+  ],
+  "last_match_date": "2026-05-17",
+  "metrics": {
+    "dummy_log_loss": 1.0833,
+    "form_log_loss": 1.0723,
+    "model_log_loss": 1.05,
+    "model_accuracy": 0.4639
+  },
+  "confusion_matrix": [
+    [
+      73,
+      35,
+      34
+    ],
+    [
+      36,
+      27,
+      27
+    ],
+    [
+      29,
+      32,
+      67
+    ]
+  ],
+  "classification_report": {
+    "H": {
+      "precision": 0.5289855072463768,
+      "recall": 0.5140845070422535,
+      "f1-score": 0.5214285714285715,
+      "support": 142.0
+    },
+    "D": {
+      "precision": 0.2872340425531915,
+      "recall": 0.3,
+      "f1-score": 0.29347826086956524,
+      "support": 90.0
+    },
+    "A": {
+      "precision": 0.5234375,
+      "recall": 0.5234375,
+      "f1-score": 0.5234375,
+      "support": 128.0
+    },
+    "accuracy": 0.4638888888888889,
+    "macro avg": {
+      "precision": 0.44655234993318943,
+      "recall": 0.44584066901408453,
+      "f1-score": 0.4461147774327123,
+      "support": 360.0
+    },
+    "weighted avg": {
+      "precision": 0.46657501627436876,
+      "recall": 0.4638888888888889,
+      "f1-score": 0.4651552795031056,
+      "support": 360.0
+    }
+  }
+}

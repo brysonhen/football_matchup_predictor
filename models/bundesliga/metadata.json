@@ -1,0 +1,91 @@
+{
+  "league": "bundesliga",
+  "league_name": "Bundesliga",
+  "feature_columns": [
+    "home_ppg_l5",
+    "away_ppg_l5",
+    "home_ppg_l10",
+    "away_ppg_l10",
+    "home_gf_l5",
+    "home_ga_l5",
+    "away_gf_l5",
+    "away_ga_l5",
+    "home_rest_days",
+    "away_rest_days",
+    "ppg_diff_l5",
+    "gf_diff_l5"
+  ],
+  "labels": [
+    "H",
+    "D",
+    "A"
+  ],
+  "train_seasons": [
+    "1920",
+    "2021",
+    "2122",
+    "2223",
+    "2324",
+    "2425"
+  ],
+  "test_seasons": [
+    "2526"
+  ],
+  "last_match_date": "2026-05-16",
+  "metrics": {
+    "dummy_log_loss": 1.0708,
+    "form_log_loss": 1.0719,
+    "model_log_loss": 1.0884,
+    "model_accuracy": 0.4764
+  },
+  "confusion_matrix": [
+    [
+      64,
+      37,
+      28
+    ],
+    [
+      20,
+      18,
+      34
+    ],
+    [
+      19,
+      17,
+      59
+    ]
+  ],
+  "classification_report": {
+    "H": {
+      "precision": 0.6213592233009708,
+      "recall": 0.49612403100775193,
+      "f1-score": 0.5517241379310345,
+      "support": 129.0
+    },
+    "D": {
+      "precision": 0.25,
+      "recall": 0.25,
+      "f1-score": 0.25,
+      "support": 72.0
+    },
+    "A": {
+      "precision": 0.48760330578512395,
+      "recall": 0.6210526315789474,
+      "f1-score": 0.5462962962962963,
+      "support": 95.0
+    },
+    "accuracy": 0.47635135135135137,
+    "macro avg": {
+      "precision": 0.4529875096953649,
+      "recall": 0.4557255541955665,
+      "f1-score": 0.4493401447424436,
+      "support": 296.0
+    },
+    "weighted avg": {
+      "precision": 0.4881001819439595,
+      "recall": 0.47635135135135137,
+      "f1-score": 0.4765897362880121,
+      "support": 296.0
+    }
+  }
+}

@@ -1,0 +1,65 @@
+{
+  "Augsburg": {
+    "stadium": "WWK Arena",
+    "city": "Augsburg, Germany",
+    "_tsdb_name": "FC Augsburg"
+  },
+  "Bayern Munich": {
+    "stadium": "Allianz Arena",
+    "city": "Munich, Germany",
+    "_tsdb_name": "Bayern Munich"
+  },
+  "Bielefeld": {},
+  "Bochum": {},
+  "Darmstadt": {},
+  "Dortmund": {
+    "stadium": "Signal Iduna Park",
+    "city": "Dortmund, Germany",
+    "_tsdb_name": "Borussia Dortmund"
+  },
+  "Ein Frankfurt": {
+    "stadium": "Deutsche Bank Park",
+    "city": "Frankfurt, Germany",
+    "_tsdb_name": "Eintracht Frankfurt"
+  },
+  "FC Koln": {
+    "stadium": "WWK Arena",
+    "city": "Augsburg, Germany",
+    "_tsdb_name": "FC Augsburg"
+  },
+  "Fortuna Dusseldorf": {},
+  "Freiburg": {
+    "stadium": "Europa-Park Stadion",
+    "city": "Freiburg im Breisgau, Baden-Württemberg",
+    "_tsdb_name": "Freiburg"
+  },
+  "Greuther Furth": {},
+  "Hamburg": {
+    "stadium": "Volksparkstadion",
+    "city": "Hamburg, Germany",
+    "_tsdb_name": "Hamburg"
+  },
+  "Heidenheim": {
+    "stadium": "Voith-Arena",
+    "city": "Heidenheim, Germany",
+    "_tsdb_name": "FC Heidenheim"
+  },
+  "Hertha": {},
+  "Hoffenheim": {},
+  "Holstein Kiel": {},
+  "Leverkusen": {
+    "stadium": "BayArena",
+    "city": "Leverkusen, Germany",
+    "_tsdb_name": "Bayer Leverkusen"
+  },
+  "M'gladbach": {},
+  "Mainz": {},
+  "Paderborn": {},
+  "RB Leipzig": {},
+  "Schalke 04": {},
+  "St Pauli": {},
+  "Stuttgart": {},
+  "Union Berlin": {},
+  "Werder Bremen": {},
+  "Wolfsburg": {}
+}

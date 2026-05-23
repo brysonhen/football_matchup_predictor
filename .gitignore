@@ -7,3 +7,4 @@ data/processed/
 data/processed_features.csv
 *.egg-info/
 .pytest_cache/
+.gstack/

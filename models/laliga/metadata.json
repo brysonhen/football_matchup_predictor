@@ -1,0 +1,91 @@
+{
+  "league": "laliga",
+  "league_name": "La Liga",
+  "feature_columns": [
+    "home_ppg_l5",
+    "away_ppg_l5",
+    "home_ppg_l10",
+    "away_ppg_l10",
+    "home_gf_l5",
+    "home_ga_l5",
+    "away_gf_l5",
+    "away_ga_l5",
+    "home_rest_days",
+    "away_rest_days",
+    "ppg_diff_l5",
+    "gf_diff_l5"
+  ],
+  "labels": [
+    "H",
+    "D",
+    "A"
+  ],
+  "train_seasons": [
+    "1920",
+    "2021",
+    "2122",
+    "2223",
+    "2324",
+    "2425"
+  ],
+  "test_seasons": [
+    "2526"
+  ],
+  "last_match_date": "2026-05-17",
+  "metrics": {
+    "dummy_log_loss": 1.0527,
+    "form_log_loss": 1.1111,
+    "model_log_loss": 1.049,
+    "model_accuracy": 0.4444
+  },
+  "confusion_matrix": [
+    [
+      92,
+      38,
+      45
+    ],
+    [
+      26,
+      20,
+      44
+    ],
+    [
+      25,
+      22,
+      48
+    ]
+  ],
+  "classification_report": {
+    "H": {
+      "precision": 0.6433566433566433,
+      "recall": 0.5257142857142857,
+      "f1-score": 0.5786163522012578,
+      "support": 175.0
+    },
+    "D": {
+      "precision": 0.25,
+      "recall": 0.2222222222222222,
+      "f1-score": 0.23529411764705882,
+      "support": 90.0
+    },
+    "A": {
+      "precision": 0.35036496350364965,
+      "recall": 0.5052631578947369,
+      "f1-score": 0.41379310344827586,
+      "support": 95.0
+    },
+    "accuracy": 0.4444444444444444,
+    "macro avg": {
+      "precision": 0.414573868953431,
+      "recall": 0.41773322194374823,
+      "f1-score": 0.4092345244321975,
+      "support": 360.0
+    },
+    "weighted avg": {
+      "precision": 0.46770023366738694,
+      "recall": 0.4444444444444444,
+      "f1-score": 0.44929076958622666,
+      "support": 360.0
+    }
+  }
+}

@@ -1,0 +1,106 @@
+{
+  "Alaves": {
+    "stadium": "Emirates Stadium",
+    "city": "Holloway, London, England",
+    "_tsdb_name": "Arsenal"
+  },
+  "Almeria": {
+    "stadium": "Emirates Stadium",
+    "city": "Holloway, London, England",
+    "_tsdb_name": "Arsenal"
+  },
+  "Ath Bilbao": {
+    "stadium": "San Mamés Barria",
+    "city": "Bilbao, Vizcaya",
+    "_tsdb_name": "Athletic Bilbao"
+  },
+  "Ath Madrid": {
+    "stadium": "Riyadh Air Metropolitano",
+    "city": "Madrid",
+    "_tsdb_name": "Atlético Madrid"
+  },
+  "Barcelona": {
+    "stadium": "Spotify Camp Nou",
+    "city": "Barcelona",
+    "_tsdb_name": "Barcelona"
+  },
+  "Betis": {
+    "stadium": "Emirates Stadium",
+    "city": "Holloway, London, England",
+    "_tsdb_name": "Arsenal"
+  },
+  "Cadiz": {
+    "stadium": "Emirates Stadium",
+    "city": "Holloway, London, England",
+    "_tsdb_name": "Arsenal"
+  },
+  "Celta": {
+    "stadium": "Estadio Abanca-Balaídos",
+    "city": "Vigo, Galicia, Spain",
+    "_tsdb_name": "Celta Vigo"
+  },
+  "Eibar": {
+    "stadium": "Emirates Stadium",
+    "city": "Holloway, London, England",
+    "_tsdb_name": "Arsenal"
+  },
+  "Elche": {
+    "stadium": "Estadio Martínez Valero",
+    "city": "Elche, Alicante",
+    "_tsdb_name": "Elche"
+  },
+  "Espanol": {
+    "stadium": "Emirates Stadium",
+    "city": "Holloway, London, England",
+    "_tsdb_name": "Arsenal"
+  },
+  "Getafe": {
+    "stadium": "Estadio Coliseum",
+    "city": "Getafe, Spain",
+    "_tsdb_name": "Getafe"
+  },
+  "Girona": {
+    "stadium": "Estadi Municipal de Montilivi",
+    "city": "Girona",
+    "_tsdb_name": "Girona"
+  },
+  "Granada": {
+    "stadium": "Emirates Stadium",
+    "city": "Holloway, London, England",
+    "_tsdb_name": "Arsenal"
+  },
+  "Huesca": {
+    "stadium": "Emirates Stadium",
+    "city": "Holloway, London, England",
+    "_tsdb_name": "Arsenal"
+  },
+  "Las Palmas": {
+    "stadium": "Emirates Stadium",
+    "city": "Holloway, London, England",
+    "_tsdb_name": "Arsenal"
+  },
+  "Leganes": {
+    "stadium": "Emirates Stadium",
+    "city": "Holloway, London, England",
+    "_tsdb_name": "Arsenal"
+  },
+  "Levante": {
+    "stadium": "Estadio Ciudad de Valencia",
+    "city": "Valencia",
+    "_tsdb_name": "Levante"
+  },
+  "Mallorca": {},
+  "Osasuna": {},
+  "Oviedo": {},
+  "Real Madrid": {
+    "stadium": "Riyadh Air Metropolitano",
+    "city": "Madrid",
+    "_tsdb_name": "Atlético Madrid"
+  },
+  "Sevilla": {},
+  "Sociedad": {},
+  "Valencia": {},
+  "Valladolid": {},
+  "Vallecano": {},
+  "Villarreal": {}
+}

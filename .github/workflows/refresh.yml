@@ -1,12 +1,21 @@
 name: Refresh predictions
 
-# Runs twice a week to pull the latest Premier League results, retrain the
-# model, and push the updated data to the website repo (which Vercel then
-# auto-deploys). Can also be triggered manually from the Actions tab.
+# Runs twice a week to pull the latest results for all leagues, retrain the
+# models, and push updated data to the website repo (which Vercel auto-deploys).
+# Can also be triggered manually with optional league filtering.
 on:
   schedule:
     - cron: "0 7 * * 1,5" # Monday & Friday, 07:00 UTC
-  workflow_dispatch: {}
+  workflow_dispatch:
+    inputs:
+      leagues:
+        description: "Space-separated league IDs to refresh (blank = all: pl laliga bundesliga seriea ligue1)"
+        required: false
+        default: ""
+      bootstrap:
+        description: "Download full history instead of just current season"
+        type: boolean
+        default: false
 
 concurrency:
   group: refresh
@@ -30,12 +39,20 @@ jobs:
         run: pip install -r requirements.txt
 
       - name: Refresh match data
-        run: python src/refresh_data.py
+        run: |
+          ARGS="${{ github.event.inputs.leagues }}"
+          if [ "${{ github.event.inputs.bootstrap }}" = "true" ]; then
+            python -m src.refresh_data --bootstrap $ARGS
+          else
+            python -m src.refresh_data $ARGS
+          fi
 
-      - name: Retrain model
-        run: python -m src.train
+      - name: Train models
+        run: |
+          ARGS="${{ github.event.inputs.leagues }}"
+          python -m src.train $ARGS
 
-      - name: Commit data + model to this repo
+      - name: Commit data + models to this repo
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
@@ -50,8 +67,10 @@ jobs:
           token: ${{ secrets.WEB_REPO_TOKEN }}
           path: web
 
-      - name: Export model into website
-        run: python -m src.export_web web
+      - name: Export models into website
+        run: |
+          ARGS="${{ github.event.inputs.leagues }}"
+          python -m src.export_web web $ARGS
 
       - name: Commit + push website
         run: |

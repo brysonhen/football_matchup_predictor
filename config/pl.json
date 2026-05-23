@@ -1,0 +1,142 @@
+{
+  "Arsenal": {
+    "stadium": "Emirates Stadium",
+    "city": "Holloway, London, England",
+    "_tsdb_name": "Arsenal"
+  },
+  "Aston Villa": {
+    "stadium": "Villa Park",
+    "city": "Aston, Birmingham",
+    "_tsdb_name": "Aston Villa"
+  },
+  "Bournemouth": {
+    "stadium": "Vitality Stadium",
+    "city": "AFCB, Bournemouth, England",
+    "_tsdb_name": "Bournemouth"
+  },
+  "Brentford": {
+    "stadium": "Brentford Community Stadium",
+    "city": "Brentford, London, England",
+    "_tsdb_name": "Brentford"
+  },
+  "Brighton": {
+    "stadium": "American Express Stadium",
+    "city": "Falmer, Brighton, East Sussex, England",
+    "_tsdb_name": "Brighton and Hove Albion"
+  },
+  "Burnley": {
+    "stadium": "Turf Moor",
+    "city": "Burnley, Lancashire",
+    "_tsdb_name": "Burnley"
+  },
+  "Chelsea": {
+    "stadium": "Stamford Bridge",
+    "city": "Fulham, London",
+    "_tsdb_name": "Chelsea"
+  },
+  "Crystal Palace": {
+    "stadium": "Selhurst Park",
+    "city": "South Norwood, London",
+    "_tsdb_name": "Crystal Palace"
+  },
+  "Everton": {
+    "stadium": "Hill Dickinson Stadium",
+    "city": "Walton, Liverpool",
+    "_tsdb_name": "Everton"
+  },
+  "Fulham": {
+    "stadium": "Craven Cottage",
+    "city": "Fulham, London, England",
+    "_tsdb_name": "Fulham"
+  },
+  "Ipswich": {
+    "stadium": "Emirates Stadium",
+    "city": "Holloway, London, England",
+    "_tsdb_name": "Arsenal"
+  },
+  "Leeds": {
+    "stadium": "Emirates Stadium",
+    "city": "Holloway, London, England",
+    "_tsdb_name": "Arsenal"
+  },
+  "Leicester": {
+    "stadium": "Emirates Stadium",
+    "city": "Holloway, London, England",
+    "_tsdb_name": "Arsenal"
+  },
+  "Liverpool": {
+    "stadium": "Emirates Stadium",
+    "city": "Holloway, London, England",
+    "_tsdb_name": "Arsenal"
+  },
+  "Luton": {
+    "stadium": "Emirates Stadium",
+    "city": "Holloway, London, England",
+    "_tsdb_name": "Arsenal"
+  },
+  "Man City": {
+    "stadium": "Emirates Stadium",
+    "city": "Holloway, London, England",
+    "_tsdb_name": "Arsenal"
+  },
+  "Man United": {
+    "stadium": "Emirates Stadium",
+    "city": "Holloway, London, England",
+    "_tsdb_name": "Arsenal"
+  },
+  "Newcastle": {
+    "stadium": "Emirates Stadium",
+    "city": "Holloway, London, England",
+    "_tsdb_name": "Arsenal"
+  },
+  "Norwich": {
+    "stadium": "Emirates Stadium",
+    "city": "Holloway, London, England",
+    "_tsdb_name": "Arsenal"
+  },
+  "Nott'm Forest": {
+    "stadium": "Emirates Stadium",
+    "city": "Holloway, London, England",
+    "_tsdb_name": "Arsenal"
+  },
+  "Sheffield United": {
+    "stadium": "Emirates Stadium",
+    "city": "Holloway, London, England",
+    "_tsdb_name": "Arsenal"
+  },
+  "Southampton": {
+    "stadium": "Emirates Stadium",
+    "city": "Holloway, London, England",
+    "_tsdb_name": "Arsenal"
+  },
+  "Sunderland": {
+    "stadium": "Emirates Stadium",
+    "city": "Holloway, London, England",
+    "_tsdb_name": "Arsenal"
+  },
+  "Tottenham": {
+    "stadium": "Emirates Stadium",
+    "city": "Holloway, London, England",
+    "_tsdb_name": "Arsenal"
+  },
+  "Watford": {
+    "stadium": "Emirates Stadium",
+    "city": "Holloway, London, England",
+    "_tsdb_name": "Arsenal"
+  },
+  "West Brom": {
+    "stadium": "Emirates Stadium",
+    "city": "Holloway, London, England",
+    "_tsdb_name": "Arsenal"
+  },
+  "West Ham": {
+    "stadium": "Emirates Stadium",
+    "city": "Holloway, London, England",
+    "_tsdb_name": "Arsenal"
+  },
+  "Wolves": {
+    "stadium": "Emirates Stadium",
+    "city": "Holloway, London, England",
+    "_tsdb_name": "Arsenal"
+  }
+}

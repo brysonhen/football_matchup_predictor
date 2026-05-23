@@ -1,0 +1,70 @@
+{
+  "Ajaccio": {},
+  "Amiens": {},
+  "Angers": {
+    "stadium": "Stade Raymond Kopa",
+    "city": "Angers",
+    "_tsdb_name": "Angers"
+  },
+  "Auxerre": {
+    "stadium": "Stade de l'Abbé Deschamps",
+    "city": "Auxerre",
+    "_tsdb_name": "Auxerre"
+  },
+  "Bordeaux": {},
+  "Brest": {
+    "stadium": "Stade Francis-Le Blé",
+    "city": "Brest",
+    "_tsdb_name": "Brest"
+  },
+  "Clermont": {},
+  "Dijon": {},
+  "Le Havre": {
+    "stadium": "Stade Océane",
+    "city": "Le Havre",
+    "_tsdb_name": "Le Havre"
+  },
+  "Lens": {
+    "stadium": "Stade Bollaert-Delelis",
+    "city": "Lens, France",
+    "_tsdb_name": "Lens"
+  },
+  "Lille": {
+    "stadium": "Decathlon Arena - Stade Pierre-Mauroy",
+    "city": "Villeneuve-d'Ascq, Lille, France",
+    "_tsdb_name": "Lille"
+  },
+  "Lorient": {
+    "stadium": "Stade du Moustoir",
+    "city": "Lorient",
+    "_tsdb_name": "Lorient"
+  },
+  "Lyon": {
+    "stadium": "Groupama Stadium",
+    "city": "Lyon",
+    "_tsdb_name": "Lyon"
+  },
+  "Marseille": {
+    "stadium": "Orange Vélodrome",
+    "city": "Marseille, France",
+    "_tsdb_name": "Marseille"
+  },
+  "Metz": {
+    "stadium": "Stade Saint-Symphorien",
+    "city": "Metz, France",
+    "_tsdb_name": "Metz"
+  },
+  "Monaco": {},
+  "Montpellier": {},
+  "Nantes": {},
+  "Nice": {},
+  "Nimes": {},
+  "Paris FC": {},
+  "Paris SG": {},
+  "Reims": {},
+  "Rennes": {},
+  "St Etienne": {},
+  "Strasbourg": {},
+  "Toulouse": {},
+  "Troyes": {}
+}

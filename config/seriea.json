@@ -1,0 +1,73 @@
+{
+  "Atalanta": {
+    "stadium": "New Balance Arena",
+    "city": "Bergamo, Italy",
+    "_tsdb_name": "Atalanta"
+  },
+  "Benevento": {},
+  "Bologna": {
+    "stadium": "Stadio Renato Dall'Ara",
+    "city": "Bologna, Emilia-Romagna",
+    "_tsdb_name": "Bologna"
+  },
+  "Brescia": {},
+  "Cagliari": {
+    "stadium": "Unipol Domus",
+    "city": "Cagliari, Italy",
+    "_tsdb_name": "Cagliari"
+  },
+  "Como": {
+    "stadium": "Stadio Giuseppe Sinigaglia",
+    "city": "Como, Italy",
+    "_tsdb_name": "Como"
+  },
+  "Cremonese": {
+    "stadium": "Stadio Giovanni Zini",
+    "city": "Cremona, Italy",
+    "_tsdb_name": "Cremonese"
+  },
+  "Crotone": {},
+  "Empoli": {},
+  "Fiorentina": {
+    "stadium": "Stadio Artemio Franchi",
+    "city": "Florence, Italy",
+    "_tsdb_name": "Fiorentina"
+  },
+  "Frosinone": {},
+  "Genoa": {
+    "stadium": "Stadio Luigi Ferraris",
+    "city": "Genoa, Italy",
+    "_tsdb_name": "Genoa"
+  },
+  "Inter": {
+    "stadium": "Stadio Giuseppe Meazza",
+    "city": "Milan, Italy",
+    "_tsdb_name": "Inter Milan"
+  },
+  "Juventus": {},
+  "Lazio": {},
+  "Lecce": {},
+  "Milan": {
+    "stadium": "Stadio Giuseppe Meazza",
+    "city": "San Siro, Milan",
+    "_tsdb_name": "AC Milan"
+  },
+  "Monza": {},
+  "Napoli": {},
+  "Parma": {},
+  "Pisa": {},
+  "Roma": {},
+  "Salernitana": {},
+  "Sampdoria": {},
+  "Sassuolo": {},
+  "Spal": {},
+  "Spezia": {},
+  "Torino": {},
+  "Udinese": {},
+  "Venezia": {},
+  "Verona": {
+    "stadium": "Stadio Marcantonio Bentegodi",
+    "city": "Verona, Italy",
+    "_tsdb_name": "Hellas Verona"
+  }
+}
