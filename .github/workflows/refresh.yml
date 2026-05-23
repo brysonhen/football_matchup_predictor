@@ -46,7 +46,7 @@ jobs:
       - name: Check out website repo
         uses: actions/checkout@v4
         with:
-          repository: brysonhen/soccer_predictor_web
+          repository: brysonhen/football_predictor_web
           token: ${{ secrets.WEB_REPO_TOKEN }}
           path: web
 
