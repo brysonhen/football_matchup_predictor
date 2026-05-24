@@ -208,11 +208,10 @@ def fetch_and_cache(league: League | str) -> dict:
             search_names = FD_EXPANSIONS.get(fd_name, [fd_name])
             for sname in search_names:
                 m = _tsdb_search_team(sname)
+                time.sleep(2.5)
                 if m:
                     match = m
-                    time.sleep(0.3)
                     break
-                time.sleep(0.3)
 
         if match:
             # Logo URL — prefer the badge, fall back to jersey

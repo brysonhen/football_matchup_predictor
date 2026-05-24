@@ -1,70 +1,215 @@
 {
-  "Ajaccio": {},
-  "Amiens": {},
+  "Ajaccio": {
+    "lat": 41.919,
+    "lng": 8.7371,
+    "stadium": "Emirates Stadium",
+    "city": "Holloway, London, England",
+    "_tsdb_name": "Arsenal"
+  },
+  "Amiens": {
+    "lat": 49.8965,
+    "lng": 2.2894,
+    "stadium": "Emirates Stadium",
+    "city": "Holloway, London, England",
+    "_tsdb_name": "Arsenal"
+  },
   "Angers": {
     "stadium": "Stade Raymond Kopa",
     "city": "Angers",
-    "_tsdb_name": "Angers"
+    "_tsdb_name": "Angers",
+    "lat": 47.4699,
+    "lng": -0.5457,
+    "logoUrl": "https://a.espncdn.com/i/teamlogos/soccer/500/7868.png"
   },
   "Auxerre": {
     "stadium": "Stade de l'Abbé Deschamps",
     "city": "Auxerre",
-    "_tsdb_name": "Auxerre"
+    "_tsdb_name": "Auxerre",
+    "lat": 47.8017,
+    "lng": 3.5564,
+    "logoUrl": "https://a.espncdn.com/i/teamlogos/soccer/500/172.png"
   },
-  "Bordeaux": {},
+  "Bordeaux": {
+    "lat": 44.8283,
+    "lng": -0.5714,
+    "stadium": "Emirates Stadium",
+    "city": "Holloway, London, England",
+    "_tsdb_name": "Arsenal",
+    "logoUrl": "https://upload.wikimedia.org/wikipedia/en/thumb/1/11/FC_Girondins_de_Bordeaux_logo.svg/120px-FC_Girondins_de_Bordeaux_logo.svg.png"
+  },
   "Brest": {
     "stadium": "Stade Francis-Le Blé",
     "city": "Brest",
-    "_tsdb_name": "Brest"
+    "_tsdb_name": "Brest",
+    "lat": 48.4103,
+    "lng": -4.525,
+    "logoUrl": "https://a.espncdn.com/i/teamlogos/soccer/500/6997.png"
   },
-  "Clermont": {},
-  "Dijon": {},
+  "Clermont": {
+    "lat": 45.7876,
+    "lng": 3.0873,
+    "stadium": "Emirates Stadium",
+    "city": "Holloway, London, England",
+    "_tsdb_name": "Arsenal"
+  },
+  "Dijon": {
+    "lat": 47.3265,
+    "lng": 5.0583,
+    "stadium": "Emirates Stadium",
+    "city": "Holloway, London, England",
+    "_tsdb_name": "Arsenal"
+  },
   "Le Havre": {
     "stadium": "Stade Océane",
     "city": "Le Havre",
-    "_tsdb_name": "Le Havre"
+    "_tsdb_name": "Le Havre",
+    "lat": 49.5059,
+    "lng": 0.129,
+    "logoUrl": "https://a.espncdn.com/i/teamlogos/soccer/500/3236.png"
   },
   "Lens": {
     "stadium": "Stade Bollaert-Delelis",
     "city": "Lens, France",
-    "_tsdb_name": "Lens"
+    "_tsdb_name": "Lens",
+    "lat": 50.4323,
+    "lng": 2.8278,
+    "logoUrl": "https://a.espncdn.com/i/teamlogos/soccer/500/175.png"
   },
   "Lille": {
     "stadium": "Decathlon Arena - Stade Pierre-Mauroy",
     "city": "Villeneuve-d'Ascq, Lille, France",
-    "_tsdb_name": "Lille"
+    "_tsdb_name": "Lille",
+    "lat": 50.6122,
+    "lng": 3.1306,
+    "logoUrl": "https://a.espncdn.com/i/teamlogos/soccer/500/166.png"
   },
   "Lorient": {
     "stadium": "Stade du Moustoir",
     "city": "Lorient",
-    "_tsdb_name": "Lorient"
+    "_tsdb_name": "Lorient",
+    "lat": 47.749,
+    "lng": -3.3698,
+    "logoUrl": "https://a.espncdn.com/i/teamlogos/soccer/500/273.png"
   },
   "Lyon": {
     "stadium": "Groupama Stadium",
     "city": "Lyon",
-    "_tsdb_name": "Lyon"
+    "_tsdb_name": "Lyon",
+    "lat": 45.7652,
+    "lng": 4.9822,
+    "logoUrl": "https://a.espncdn.com/i/teamlogos/soccer/500/167.png"
   },
   "Marseille": {
     "stadium": "Orange Vélodrome",
     "city": "Marseille, France",
-    "_tsdb_name": "Marseille"
+    "_tsdb_name": "Marseille",
+    "lat": 43.2696,
+    "lng": 5.3961,
+    "logoUrl": "https://a.espncdn.com/i/teamlogos/soccer/500/176.png"
   },
   "Metz": {
     "stadium": "Stade Saint-Symphorien",
     "city": "Metz, France",
-    "_tsdb_name": "Metz"
+    "_tsdb_name": "Metz",
+    "lat": 49.1114,
+    "lng": 6.2153,
+    "logoUrl": "https://a.espncdn.com/i/teamlogos/soccer/500/177.png"
   },
-  "Monaco": {},
-  "Montpellier": {},
-  "Nantes": {},
-  "Nice": {},
-  "Nimes": {},
-  "Paris FC": {},
-  "Paris SG": {},
-  "Reims": {},
-  "Rennes": {},
-  "St Etienne": {},
-  "Strasbourg": {},
-  "Toulouse": {},
-  "Troyes": {}
+  "Monaco": {
+    "lat": 43.7275,
+    "lng": 7.4158,
+    "stadium": "Emirates Stadium",
+    "city": "Holloway, London, England",
+    "_tsdb_name": "Arsenal",
+    "logoUrl": "https://a.espncdn.com/i/teamlogos/soccer/500/174.png"
+  },
+  "Montpellier": {
+    "lat": 43.6226,
+    "lng": 3.8133,
+    "stadium": "Emirates Stadium",
+    "city": "Holloway, London, England",
+    "_tsdb_name": "Arsenal"
+  },
+  "Nantes": {
+    "lat": 47.2566,
+    "lng": -1.526,
+    "stadium": "Emirates Stadium",
+    "city": "Holloway, London, England",
+    "_tsdb_name": "Arsenal",
+    "logoUrl": "https://a.espncdn.com/i/teamlogos/soccer/500/165.png"
+  },
+  "Nice": {
+    "lat": 43.7054,
+    "lng": 7.1926,
+    "stadium": "Emirates Stadium",
+    "city": "Holloway, London, England",
+    "_tsdb_name": "Arsenal",
+    "logoUrl": "https://a.espncdn.com/i/teamlogos/soccer/500/2502.png"
+  },
+  "Nimes": {
+    "stadium": "Emirates Stadium",
+    "city": "Holloway, London, England",
+    "_tsdb_name": "Arsenal"
+  },
+  "Paris FC": {
+    "stadium": "Emirates Stadium",
+    "city": "Holloway, London, England",
+    "_tsdb_name": "Arsenal",
+    "logoUrl": "https://a.espncdn.com/i/teamlogos/soccer/500/6851.png"
+  },
+  "Paris SG": {
+    "lat": 48.8414,
+    "lng": 2.253,
+    "stadium": "Emirates Stadium",
+    "city": "Holloway, London, England",
+    "_tsdb_name": "Arsenal",
+    "logoUrl": "https://a.espncdn.com/i/teamlogos/soccer/500/160.png"
+  },
+  "Reims": {
+    "lat": 49.2468,
+    "lng": 4.0256,
+    "stadium": "Emirates Stadium",
+    "city": "Holloway, London, England",
+    "_tsdb_name": "Arsenal"
+  },
+  "Rennes": {
+    "lat": 48.1072,
+    "lng": -1.7133,
+    "stadium": "Emirates Stadium",
+    "city": "Holloway, London, England",
+    "_tsdb_name": "Arsenal",
+    "logoUrl": "https://a.espncdn.com/i/teamlogos/soccer/500/169.png"
+  },
+  "St Etienne": {
+    "lat": 45.4601,
+    "lng": 4.3898,
+    "stadium": "Emirates Stadium",
+    "city": "Holloway, London, England",
+    "_tsdb_name": "Arsenal",
+    "logoUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/St_Etienne_Stade_Geoffroy_Guichard.jpg/120px-St_Etienne_Stade_Geoffroy_Guichard.jpg"
+  },
+  "Strasbourg": {
+    "lat": 48.558,
+    "lng": 7.7531,
+    "stadium": "Emirates Stadium",
+    "city": "Holloway, London, England",
+    "_tsdb_name": "Arsenal",
+    "logoUrl": "https://a.espncdn.com/i/teamlogos/soccer/500/180.png"
+  },
+  "Toulouse": {
+    "lat": 43.5836,
+    "lng": 1.4342,
+    "stadium": "Emirates Stadium",
+    "city": "Holloway, London, England",
+    "_tsdb_name": "Arsenal",
+    "logoUrl": "https://a.espncdn.com/i/teamlogos/soccer/500/179.png"
+  },
+  "Troyes": {
+    "lat": 48.2908,
+    "lng": 4.0744,
+    "stadium": "Emirates Stadium",
+    "city": "Holloway, London, England",
+    "_tsdb_name": "Arsenal",
+    "logoUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a9/ESTAC_Troyes_Logo.svg/120px-ESTAC_Troyes_Logo.svg.png"
+  }
 }
