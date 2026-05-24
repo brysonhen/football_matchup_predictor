@@ -1,38 +1,38 @@
 {
   "Alaves": {
-    "stadium": "Emirates Stadium",
-    "city": "Holloway, London, England",
+    "stadium": "Mendizorrotza",
+    "city": "Vitoria-Gasteiz",
     "_tsdb_name": "Arsenal",
     "lat": 42.8509,
     "lng": -2.6777,
     "logoUrl": "https://upload.wikimedia.org/wikipedia/en/thumb/f/f8/Deportivo_Alaves_logo_%282020%29.svg/120px-Deportivo_Alaves_logo_%282020%29.svg.png"
   },
   "Almeria": {
-    "stadium": "Emirates Stadium",
-    "city": "Holloway, London, England",
+    "stadium": "Power Horse Stadium",
+    "city": "Almería",
     "_tsdb_name": "Arsenal",
     "lat": 36.8498,
     "lng": -2.4007,
     "logoUrl": "https://upload.wikimedia.org/wikipedia/en/thumb/4/4a/UD_Almeria_logo.svg/120px-UD_Almeria_logo.svg.png"
   },
   "Ath Bilbao": {
-    "stadium": "San Mamés Barria",
-    "city": "Bilbao, Vizcaya",
+    "stadium": "San Mamés",
+    "city": "Bilbao",
     "_tsdb_name": "Athletic Bilbao",
     "lat": 43.2641,
-    "lng": -2.9499,
+    "lng": -2.9495,
     "logoUrl": "https://a.espncdn.com/i/teamlogos/soccer/500/93.png"
   },
   "Ath Madrid": {
-    "stadium": "Riyadh Air Metropolitano",
+    "stadium": "Cívitas Metropolitano",
     "city": "Madrid",
     "_tsdb_name": "Atlético Madrid",
-    "lat": 40.436,
+    "lat": 40.4361,
     "lng": -3.5994,
     "logoUrl": "https://a.espncdn.com/i/teamlogos/soccer/500/1068.png"
   },
   "Barcelona": {
-    "stadium": "Spotify Camp Nou",
+    "stadium": "Estadi Olímpic",
     "city": "Barcelona",
     "_tsdb_name": "Barcelona",
     "lat": 41.3809,
@@ -40,130 +40,135 @@
     "logoUrl": "https://a.espncdn.com/i/teamlogos/soccer/500/83.png"
   },
   "Betis": {
-    "stadium": "Emirates Stadium",
-    "city": "Holloway, London, England",
+    "stadium": "Estadio Benito Villamarín",
+    "city": "Seville",
     "_tsdb_name": "Arsenal",
-    "lat": 37.3562,
-    "lng": -5.9818,
+    "lat": 37.3565,
+    "lng": -5.9819,
     "logoUrl": "https://a.espncdn.com/i/teamlogos/soccer/500/244.png"
   },
   "Cadiz": {
-    "stadium": "Emirates Stadium",
-    "city": "Holloway, London, England",
+    "stadium": "Nuevo Mirandilla",
+    "city": "Cádiz",
     "_tsdb_name": "Arsenal",
-    "lat": 36.515,
-    "lng": -6.2706
+    "lat": 36.5013,
+    "lng": -6.2715,
+    "logoUrl": "https://a.espncdn.com/i/teamlogos/soccer/500/3842.png"
   },
   "Celta": {
-    "stadium": "Estadio Abanca-Balaídos",
-    "city": "Vigo, Galicia, Spain",
+    "stadium": "Abanca-Balaídos",
+    "city": "Vigo",
     "_tsdb_name": "Celta Vigo",
-    "lat": 42.2118,
-    "lng": -8.7378,
+    "lat": 42.2119,
+    "lng": -8.7394,
     "logoUrl": "https://a.espncdn.com/i/teamlogos/soccer/500/85.png"
   },
   "Eibar": {
-    "stadium": "Emirates Stadium",
-    "city": "Holloway, London, England",
+    "stadium": "Estadio Municipal de Ipurúa",
+    "city": "Eibar",
     "_tsdb_name": "Arsenal",
-    "lat": 43.1791,
-    "lng": -2.4731,
+    "lat": 43.1847,
+    "lng": -2.4813,
     "logoUrl": "https://upload.wikimedia.org/wikipedia/en/thumb/3/3b/SD_Eibar_logo_2016.svg/120px-SD_Eibar_logo_2016.svg.png"
   },
   "Elche": {
-    "stadium": "Estadio Martínez Valero",
-    "city": "Elche, Alicante",
+    "stadium": "Estadio Manuel Martínez Valero",
+    "city": "Elche",
     "_tsdb_name": "Elche",
-    "lat": 38.262,
-    "lng": -0.6972,
+    "lat": 38.2642,
+    "lng": -0.6997,
     "logoUrl": "https://a.espncdn.com/i/teamlogos/soccer/500/3751.png"
   },
   "Espanol": {
-    "stadium": "Emirates Stadium",
-    "city": "Holloway, London, England",
+    "stadium": "RCDE Stadium",
+    "city": "Cornellà de Llobregat",
     "_tsdb_name": "Arsenal",
-    "lat": 41.348,
-    "lng": 2.0745,
+    "lat": 41.3474,
+    "lng": 2.0793,
     "logoUrl": "https://a.espncdn.com/i/teamlogos/soccer/500/88.png"
   },
   "Getafe": {
-    "stadium": "Estadio Coliseum",
-    "city": "Getafe, Spain",
+    "stadium": "Coliseum Alfonso Pérez",
+    "city": "Getafe",
     "_tsdb_name": "Getafe",
-    "lat": 40.3254,
-    "lng": -3.7178,
+    "lat": 40.3256,
+    "lng": -3.7174,
     "logoUrl": "https://a.espncdn.com/i/teamlogos/soccer/500/2922.png"
   },
   "Girona": {
-    "stadium": "Estadi Municipal de Montilivi",
+    "stadium": "Estadi Montilivi",
     "city": "Girona",
     "_tsdb_name": "Girona",
-    "lat": 41.9843,
-    "lng": 2.8179,
+    "lat": 41.9633,
+    "lng": 2.822,
     "logoUrl": "https://a.espncdn.com/i/teamlogos/soccer/500/9812.png"
   },
   "Granada": {
-    "stadium": "Emirates Stadium",
-    "city": "Holloway, London, England",
+    "stadium": "Nuevo Los Cármenes",
+    "city": "Granada",
     "_tsdb_name": "Arsenal",
-    "lat": 37.1662,
-    "lng": -3.5956
+    "lat": 37.1518,
+    "lng": -3.5967,
+    "logoUrl": "https://a.espncdn.com/i/teamlogos/soccer/500/3747.png"
   },
   "Huesca": {
-    "stadium": "Emirates Stadium",
-    "city": "Holloway, London, England",
+    "stadium": "El Alcoraz",
+    "city": "Huesca",
     "_tsdb_name": "Arsenal",
-    "lat": 42.1342,
-    "lng": -0.4095
+    "lat": 42.1369,
+    "lng": -0.4082,
+    "logoUrl": "https://a.espncdn.com/i/teamlogos/soccer/500/5413.png"
   },
   "Las Palmas": {
-    "stadium": "Emirates Stadium",
-    "city": "Holloway, London, England",
+    "stadium": "Estadio de Gran Canaria",
+    "city": "Las Palmas",
     "_tsdb_name": "Arsenal",
-    "lat": 28.0997,
-    "lng": -15.4468
+    "lat": 28.1006,
+    "lng": -15.4508,
+    "logoUrl": "https://a.espncdn.com/i/teamlogos/soccer/500/98.png"
   },
   "Leganes": {
-    "stadium": "Emirates Stadium",
-    "city": "Holloway, London, England",
+    "stadium": "Estadio Municipal de Butarque",
+    "city": "Leganés",
     "_tsdb_name": "Arsenal",
-    "lat": 40.3389,
-    "lng": -3.7671
+    "lat": 40.3311,
+    "lng": -3.7631,
+    "logoUrl": "https://a.espncdn.com/i/teamlogos/soccer/500/17534.png"
   },
   "Levante": {
-    "stadium": "Estadio Ciudad de Valencia",
+    "stadium": "Estadi Ciutat de València",
     "city": "Valencia",
     "_tsdb_name": "Levante",
-    "lat": 39.4965,
-    "lng": -0.3449,
+    "lat": 39.5039,
+    "lng": -0.35,
     "logoUrl": "https://a.espncdn.com/i/teamlogos/soccer/500/1538.png"
   },
   "Mallorca": {
-    "stadium": "Emirates Stadium",
-    "city": "Holloway, London, England",
+    "stadium": "Visit Mallorca Estadi",
+    "city": "Palma",
     "_tsdb_name": "Arsenal",
-    "lat": 39.5951,
-    "lng": 2.6302,
+    "lat": 39.59,
+    "lng": 2.6308,
     "logoUrl": "https://a.espncdn.com/i/teamlogos/soccer/500/84.png"
   },
   "Osasuna": {
-    "stadium": "Emirates Stadium",
-    "city": "Holloway, London, England",
+    "stadium": "El Sadar",
+    "city": "Pamplona",
     "_tsdb_name": "Arsenal",
-    "lat": 42.7994,
-    "lng": -1.6367,
+    "lat": 42.7967,
+    "lng": -1.6372,
     "logoUrl": "https://a.espncdn.com/i/teamlogos/soccer/500/97.png"
   },
   "Oviedo": {
-    "stadium": "Emirates Stadium",
-    "city": "Holloway, London, England",
+    "stadium": "Carlos Tartiere",
+    "city": "Oviedo",
     "_tsdb_name": "Arsenal",
-    "lat": 43.3573,
-    "lng": -5.8419,
+    "lat": 43.3607,
+    "lng": -5.8493,
     "logoUrl": "https://a.espncdn.com/i/teamlogos/soccer/500/92.png"
   },
   "Real Madrid": {
-    "stadium": "Riyadh Air Metropolitano",
+    "stadium": "Santiago Bernabéu",
     "city": "Madrid",
     "_tsdb_name": "Atlético Madrid",
     "lat": 40.4531,
@@ -171,50 +176,51 @@
     "logoUrl": "https://a.espncdn.com/i/teamlogos/soccer/500/86.png"
   },
   "Sevilla": {
-    "stadium": "Emirates Stadium",
-    "city": "Holloway, London, England",
+    "stadium": "Ramón Sánchez-Pizjuán",
+    "city": "Seville",
     "_tsdb_name": "Arsenal",
-    "lat": 37.384,
-    "lng": -5.9706,
+    "lat": 37.3839,
+    "lng": -5.9705,
     "logoUrl": "https://a.espncdn.com/i/teamlogos/soccer/500/243.png"
   },
   "Sociedad": {
-    "stadium": "Emirates Stadium",
-    "city": "Holloway, London, England",
+    "stadium": "Reale Arena",
+    "city": "San Sebastián",
     "_tsdb_name": "Arsenal",
-    "lat": 43.3018,
-    "lng": -1.9733,
+    "lat": 43.3014,
+    "lng": -1.9734,
     "logoUrl": "https://a.espncdn.com/i/teamlogos/soccer/500/89.png"
   },
   "Valencia": {
-    "stadium": "Emirates Stadium",
-    "city": "Holloway, London, England",
+    "stadium": "Mestalla",
+    "city": "Valencia",
     "_tsdb_name": "Arsenal",
     "lat": 39.4745,
-    "lng": -0.3585,
+    "lng": -0.3582,
     "logoUrl": "https://a.espncdn.com/i/teamlogos/soccer/500/94.png"
   },
   "Valladolid": {
-    "stadium": "Emirates Stadium",
-    "city": "Holloway, London, England",
+    "stadium": "Estadio Nuevo José Zorrilla",
+    "city": "Valladolid",
     "_tsdb_name": "Arsenal",
-    "lat": 41.6399,
-    "lng": -4.7336
+    "lat": 41.6453,
+    "lng": -4.7539,
+    "logoUrl": "https://a.espncdn.com/i/teamlogos/soccer/500/95.png"
   },
   "Vallecano": {
-    "stadium": "Emirates Stadium",
-    "city": "Holloway, London, England",
+    "stadium": "Estadio de Vallecas",
+    "city": "Madrid",
     "_tsdb_name": "Arsenal",
-    "lat": 40.3913,
-    "lng": -3.6557,
+    "lat": 40.3914,
+    "lng": -3.6453,
     "logoUrl": "https://a.espncdn.com/i/teamlogos/soccer/500/101.png"
   },
   "Villarreal": {
-    "stadium": "Emirates Stadium",
-    "city": "Holloway, London, England",
+    "stadium": "Estadio de la Cerámica",
+    "city": "Villarreal",
     "_tsdb_name": "Arsenal",
-    "lat": 39.9441,
-    "lng": -0.103,
+    "lat": 39.9442,
+    "lng": -0.1039,
     "logoUrl": "https://a.espncdn.com/i/teamlogos/soccer/500/102.png"
   }
 }
