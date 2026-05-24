@@ -6,18 +6,35 @@ import numpy as np
 import pandas as pd
 
 FEATURE_COLUMNS = [
+    # Short-window form
     "home_ppg_l5",
     "away_ppg_l5",
     "home_ppg_l10",
     "away_ppg_l10",
+    # Goal output (short window)
     "home_gf_l5",
     "home_ga_l5",
     "away_gf_l5",
     "away_ga_l5",
+    # Goal output (long window)
+    "home_gf_l10",
+    "home_ga_l10",
+    "away_gf_l10",
+    "away_ga_l10",
+    # Goal difference per game
+    "home_gd_l5",
+    "away_gd_l5",
+    "home_gd_l10",
+    "away_gd_l10",
+    # Rest / fatigue
     "home_rest_days",
     "away_rest_days",
+    # Composite diffs (help logistic regression find the comparison signal)
     "ppg_diff_l5",
+    "ppg_diff_l10",
     "gf_diff_l5",
+    "gd_diff_l5",
+    "ga_diff_l5",          # home_ga_l5 minus away_gf_l5 (home defense vs away attack)
 ]
 
 WINDOWS = (5, 10)
@@ -56,10 +73,10 @@ class TeamHistory:
             w_ga = ga[-window:]
             if len(w_pts) < window:
                 continue
-            out[f"ppg_l{window}"] = sum(w_pts) / window
-            if window == 5:
-                out["gf_l5"] = sum(w_gf) / window
-                out["ga_l5"] = sum(w_ga) / window
+            out[f"ppg_l{window}"]  = sum(w_pts) / window
+            out[f"gf_l{window}"]   = sum(w_gf) / window
+            out[f"ga_l{window}"]   = sum(w_ga) / window
+            out[f"gd_l{window}"]   = (sum(w_gf) - sum(w_ga)) / window
 
         out["rest_days"] = (as_of - dates[-1]).days
 
@@ -98,30 +115,49 @@ def build_feature_matrix(matches: pd.DataFrame) -> pd.DataFrame:
         home_snap = histories[home].snapshot(date)
         away_snap = histories[away].snapshot(date)
 
+        # Require both teams to have at least 10 games of history
         if (
             "ppg_l5" in home_snap
             and "ppg_l5" in away_snap
             and "ppg_l10" in home_snap
             and "ppg_l10" in away_snap
         ):
+            h, a = home_snap, away_snap
             feature_row = {
                 "Date": date,
                 "Season": row.Season,
                 "HomeTeam": home,
                 "AwayTeam": away,
                 "FTR": row.FTR,
-                "home_ppg_l5": home_snap["ppg_l5"],
-                "away_ppg_l5": away_snap["ppg_l5"],
-                "home_ppg_l10": home_snap["ppg_l10"],
-                "away_ppg_l10": away_snap["ppg_l10"],
-                "home_gf_l5": home_snap["gf_l5"],
-                "home_ga_l5": home_snap["ga_l5"],
-                "away_gf_l5": away_snap["gf_l5"],
-                "away_ga_l5": away_snap["ga_l5"],
-                "home_rest_days": home_snap["rest_days"],
-                "away_rest_days": away_snap["rest_days"],
-                "ppg_diff_l5": home_snap["ppg_l5"] - away_snap["ppg_l5"],
-                "gf_diff_l5": home_snap["gf_l5"] - away_snap["gf_l5"],
+                # Short form
+                "home_ppg_l5":  h["ppg_l5"],
+                "away_ppg_l5":  a["ppg_l5"],
+                "home_ppg_l10": h["ppg_l10"],
+                "away_ppg_l10": a["ppg_l10"],
+                # Goals (short)
+                "home_gf_l5":   h["gf_l5"],
+                "home_ga_l5":   h["ga_l5"],
+                "away_gf_l5":   a["gf_l5"],
+                "away_ga_l5":   a["ga_l5"],
+                # Goals (long)
+                "home_gf_l10":  h["gf_l10"],
+                "home_ga_l10":  h["ga_l10"],
+                "away_gf_l10":  a["gf_l10"],
+                "away_ga_l10":  a["ga_l10"],
+                # Goal difference
+                "home_gd_l5":   h["gd_l5"],
+                "away_gd_l5":   a["gd_l5"],
+                "home_gd_l10":  h["gd_l10"],
+                "away_gd_l10":  a["gd_l10"],
+                # Rest
+                "home_rest_days": h["rest_days"],
+                "away_rest_days": a["rest_days"],
+                # Composite diffs
+                "ppg_diff_l5":  h["ppg_l5"]  - a["ppg_l5"],
+                "ppg_diff_l10": h["ppg_l10"] - a["ppg_l10"],
+                "gf_diff_l5":   h["gf_l5"]  - a["gf_l5"],
+                "gd_diff_l5":   h["gd_l5"]  - a["gd_l5"],
+                "ga_diff_l5":   h["ga_l5"]  - a["gf_l5"],  # home defense vs away attack
             }
             rows.append(feature_row)
 
@@ -159,20 +195,23 @@ def matchup_features(home: str, away: str, snapshots: dict[str, dict]) -> np.nda
         return None
 
     h, a = snapshots[home], snapshots[away]
-    return np.array(
-        [
-            h["ppg_l5"],
-            a["ppg_l5"],
-            h["ppg_l10"],
-            a["ppg_l10"],
-            h["gf_l5"],
-            h["ga_l5"],
-            a["gf_l5"],
-            a["ga_l5"],
-            h["rest_days"],
-            a["rest_days"],
-            h["ppg_l5"] - a["ppg_l5"],
-            h["gf_l5"] - a["gf_l5"],
-        ],
-        dtype=float,
-    )
+
+    def g(snap: dict, key: str, default: float = 0.0) -> float:
+        return float(snap.get(key, default))
+
+    return np.array([
+        g(h, "ppg_l5"),   g(a, "ppg_l5"),
+        g(h, "ppg_l10"),  g(a, "ppg_l10"),
+        g(h, "gf_l5"),    g(h, "ga_l5"),
+        g(a, "gf_l5"),    g(a, "ga_l5"),
+        g(h, "gf_l10"),   g(h, "ga_l10"),
+        g(a, "gf_l10"),   g(a, "ga_l10"),
+        g(h, "gd_l5"),    g(a, "gd_l5"),
+        g(h, "gd_l10"),   g(a, "gd_l10"),
+        g(h, "rest_days"), g(a, "rest_days"),
+        g(h, "ppg_l5")  - g(a, "ppg_l5"),
+        g(h, "ppg_l10") - g(a, "ppg_l10"),
+        g(h, "gf_l5")   - g(a, "gf_l5"),
+        g(h, "gd_l5")   - g(a, "gd_l5"),
+        g(h, "ga_l5")   - g(a, "gf_l5"),
+    ], dtype=float)

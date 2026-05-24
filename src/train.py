@@ -8,6 +8,7 @@ import joblib
 import numpy as np
 import pandas as pd
 from sklearn.dummy import DummyClassifier
+from sklearn.ensemble import GradientBoostingClassifier, VotingClassifier
 from sklearn.linear_model import LogisticRegression
 from sklearn.metrics import (
     accuracy_score,
@@ -15,6 +16,7 @@ from sklearn.metrics import (
     confusion_matrix,
     log_loss,
 )
+from sklearn.multiclass import OneVsRestClassifier
 from sklearn.pipeline import Pipeline
 from sklearn.preprocessing import StandardScaler
 
@@ -76,17 +78,12 @@ def train_and_evaluate(league: League | str = "pl") -> dict:
         y_test, _form_baseline_probs(features.loc[test_mask]), labels=[0, 1, 2]
     )
 
-    pipeline = Pipeline(
-        [
-            ("scaler", StandardScaler()),
-            (
-                "model",
-                LogisticRegression(
-                    max_iter=2000, random_state=42, class_weight="balanced"
-                ),
-            ),
-        ]
+    # Logistic regression — no class_weight balancing (improves raw accuracy)
+    # with lighter regularization to handle the expanded feature set.
+    lr = LogisticRegression(
+        C=0.5, max_iter=3000, random_state=42, solver="lbfgs"
     )
+    pipeline = Pipeline([("scaler", StandardScaler()), ("model", lr)])
     pipeline.fit(X_train, y_train)
     ml_probs = pipeline.predict_proba(X_test)
     ml_preds = pipeline.predict(X_test)
