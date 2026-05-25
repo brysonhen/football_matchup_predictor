@@ -42,61 +42,61 @@
   "test_seasons": [
     "2526"
   ],
-  "last_match_date": "2026-05-19",
+  "last_match_date": "2026-05-24",
   "metrics": {
-    "dummy_log_loss": 1.0858,
-    "form_log_loss": 1.1041,
-    "model_log_loss": 1.041,
-    "model_accuracy": 0.4694
+    "dummy_log_loss": 1.0863,
+    "form_log_loss": 1.1018,
+    "model_log_loss": 1.0449,
+    "model_accuracy": 0.4622
   },
   "confusion_matrix": [
     [
-      115,
+      116,
       0,
-      38
+      41
     ],
     [
-      62,
+      64,
       0,
-      36
+      37
     ],
     [
-      55,
+      57,
       0,
-      54
+      55
     ]
   ],
   "classification_report": {
     "H": {
-      "precision": 0.4956896551724138,
-      "recall": 0.7516339869281046,
-      "f1-score": 0.5974025974025974,
-      "support": 153.0
+      "precision": 0.48945147679324896,
+      "recall": 0.7388535031847133,
+      "f1-score": 0.5888324873096447,
+      "support": 157.0
     },
     "D": {
       "precision": 0.0,
       "recall": 0.0,
       "f1-score": 0.0,
-      "support": 98.0
+      "support": 101.0
     },
     "A": {
-      "precision": 0.421875,
-      "recall": 0.4954128440366973,
-      "f1-score": 0.45569620253164556,
-      "support": 109.0
+      "precision": 0.41353383458646614,
+      "recall": 0.49107142857142855,
+      "f1-score": 0.4489795918367347,
+      "support": 112.0
     },
-    "accuracy": 0.46944444444444444,
+    "accuracy": 0.46216216216216216,
     "macro avg": {
-      "precision": 0.30585488505747127,
-      "recall": 0.4156822769882673,
-      "f1-score": 0.35103293331141433,
-      "support": 360.0
+      "precision": 0.30099510379323835,
+      "recall": 0.4099749772520473,
+      "f1-score": 0.3459373597154598,
+      "support": 370.0
     },
     "weighted avg": {
-      "precision": 0.33840247844827587,
-      "recall": 0.46944444444444444,
-      "f1-score": 0.39187078744040765,
-      "support": 360.0
+      "precision": 0.3328639765681738,
+      "recall": 0.46216216216216216,
+      "f1-score": 0.3857632832252122,
+      "support": 370.0
     }
   }
 }
