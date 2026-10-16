@@ -43,61 +43,61 @@
   "test_seasons": [
     "2627"
   ],
-  "last_match_date": "2026-09-20",
+  "last_match_date": "2026-10-12",
   "metrics": {
-    "dummy_log_loss": 1.0756,
-    "form_log_loss": 1.063,
-    "model_log_loss": 1.0351,
-    "model_accuracy": 0.4898
+    "dummy_log_loss": 1.0727,
+    "form_log_loss": 1.0239,
+    "model_log_loss": 1.0025,
+    "model_accuracy": 0.5091
   },
   "confusion_matrix": [
     [
-      15,
+      18,
       1,
       5
     ],
     [
-      8,
-      1,
+      9,
+      2,
       1
     ],
     [
-      9,
+      10,
       1,
       8
     ]
   ],
   "classification_report": {
     "H": {
-      "precision": 0.46875,
-      "recall": 0.7142857142857143,
-      "f1-score": 0.5660377358490566,
-      "support": 21.0
+      "precision": 0.4864864864864865,
+      "recall": 0.75,
+      "f1-score": 0.5901639344262295,
+      "support": 24.0
     },
     "D": {
-      "precision": 0.3333333333333333,
-      "recall": 0.1,
-      "f1-score": 0.15384615384615385,
-      "support": 10.0
+      "precision": 0.5,
+      "recall": 0.16666666666666666,
+      "f1-score": 0.25,
+      "support": 12.0
     },
     "A": {
       "precision": 0.5714285714285714,
-      "recall": 0.4444444444444444,
-      "f1-score": 0.5,
-      "support": 18.0
+      "recall": 0.42105263157894735,
+      "f1-score": 0.48484848484848486,
+      "support": 19.0
     },
-    "accuracy": 0.4897959183673469,
+    "accuracy": 0.509090909090909,
     "macro avg": {
-      "precision": 0.45783730158730157,
-      "recall": 0.41957671957671955,
-      "f1-score": 0.40662796323173683,
-      "support": 49.0
+      "precision": 0.5193050193050194,
+      "recall": 0.445906432748538,
+      "f1-score": 0.4416708064249048,
+      "support": 55.0
     },
     "weighted avg": {
-      "precision": 0.4788326044703595,
-      "recall": 0.4897959183673469,
-      "f1-score": 0.4576582447202393,
-      "support": 49.0
+      "precision": 0.5187785187785188,
+      "recall": 0.509090909090909,
+      "f1-score": 0.4795646479700131,
+      "support": 55.0
     }
   }
 }
