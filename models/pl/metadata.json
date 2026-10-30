@@ -43,61 +43,61 @@
   "test_seasons": [
     "2627"
   ],
-  "last_match_date": "2026-10-19",
+  "last_match_date": "2026-10-25",
   "metrics": {
-    "dummy_log_loss": 1.1088,
-    "form_log_loss": 1.0732,
-    "model_log_loss": 1.0775,
-    "model_accuracy": 0.4211
+    "dummy_log_loss": 1.1065,
+    "form_log_loss": 1.097,
+    "model_log_loss": 1.0957,
+    "model_accuracy": 0.3846
   },
   "confusion_matrix": [
     [
-      16,
+      17,
       0,
-      5
+      7
     ],
     [
-      11,
+      12,
       0,
-      6
+      7
     ],
     [
-      11,
+      14,
       0,
       8
     ]
   ],
   "classification_report": {
     "H": {
-      "precision": 0.42105263157894735,
-      "recall": 0.7619047619047619,
-      "f1-score": 0.5423728813559322,
-      "support": 21.0
+      "precision": 0.3953488372093023,
+      "recall": 0.7083333333333334,
+      "f1-score": 0.5074626865671642,
+      "support": 24.0
     },
     "D": {
       "precision": 0.0,
       "recall": 0.0,
       "f1-score": 0.0,
-      "support": 17.0
-    },
-    "A": {
-      "precision": 0.42105263157894735,
-      "recall": 0.42105263157894735,
-      "f1-score": 0.42105263157894735,
       "support": 19.0
     },
-    "accuracy": 0.42105263157894735,
+    "A": {
+      "precision": 0.36363636363636365,
+      "recall": 0.36363636363636365,
+      "f1-score": 0.36363636363636365,
+      "support": 22.0
+    },
+    "accuracy": 0.38461538461538464,
     "macro avg": {
-      "precision": 0.2807017543859649,
-      "recall": 0.3943191311612364,
-      "f1-score": 0.32114183764495985,
-      "support": 57.0
+      "precision": 0.2529950669485553,
+      "recall": 0.3573232323232323,
+      "f1-score": 0.2903663500678426,
+      "support": 65.0
     },
     "weighted avg": {
-      "precision": 0.29547553093259465,
-      "recall": 0.42105263157894735,
-      "f1-score": 0.34017246506095744,
-      "support": 57.0
+      "precision": 0.2690518783542039,
+      "recall": 0.38461538461538464,
+      "f1-score": 0.31044776119402984,
+      "support": 65.0
     }
   }
 }

@@ -43,61 +43,61 @@
   "test_seasons": [
     "2627"
   ],
-  "last_match_date": "2026-10-18",
+  "last_match_date": "2026-10-26",
   "metrics": {
-    "dummy_log_loss": 1.0595,
-    "form_log_loss": 1.1809,
-    "model_log_loss": 1.0148,
-    "model_accuracy": 0.5536
+    "dummy_log_loss": 1.0634,
+    "form_log_loss": 1.1724,
+    "model_log_loss": 1.0228,
+    "model_accuracy": 0.5469
   },
   "confusion_matrix": [
     [
-      18,
+      22,
       0,
       7
     ],
     [
-      8,
+      10,
       1,
-      3
+      4
     ],
     [
-      7,
+      8,
       0,
       12
     ]
   ],
   "classification_report": {
     "H": {
-      "precision": 0.5454545454545454,
-      "recall": 0.72,
-      "f1-score": 0.6206896551724138,
-      "support": 25.0
+      "precision": 0.55,
+      "recall": 0.7586206896551724,
+      "f1-score": 0.6376811594202898,
+      "support": 29.0
     },
     "D": {
       "precision": 1.0,
-      "recall": 0.08333333333333333,
-      "f1-score": 0.15384615384615385,
-      "support": 12.0
+      "recall": 0.06666666666666667,
+      "f1-score": 0.125,
+      "support": 15.0
     },
     "A": {
-      "precision": 0.5454545454545454,
-      "recall": 0.631578947368421,
-      "f1-score": 0.5853658536585366,
-      "support": 19.0
+      "precision": 0.5217391304347826,
+      "recall": 0.6,
+      "f1-score": 0.5581395348837209,
+      "support": 20.0
     },
-    "accuracy": 0.5535714285714286,
+    "accuracy": 0.546875,
     "macro avg": {
-      "precision": 0.6969696969696969,
-      "recall": 0.4783040935672515,
-      "f1-score": 0.45330055422570137,
-      "support": 56.0
+      "precision": 0.6905797101449275,
+      "recall": 0.47509578544061304,
+      "f1-score": 0.44027356476800356,
+      "support": 64.0
     },
     "weighted avg": {
-      "precision": 0.6428571428571429,
-      "recall": 0.5535714285714286,
-      "f1-score": 0.5086669008031498,
-      "support": 56.0
+      "precision": 0.6466372282608697,
+      "recall": 0.546875,
+      "f1-score": 0.4926647550134816,
+      "support": 64.0
     }
   }
 }
